@@ -10,9 +10,9 @@ public class SubArrays {
             for(int j=i;j<numbers.length;j++){
                 //ending point 
                 int end =j;
+                ts++;
                 for(int k=start;k<=end;k++){ //print
                  System.out.print(numbers[k]+" "); //subarray
-                 ts++;
                 }
                  System.out.println();
             }
@@ -24,7 +24,7 @@ public class SubArrays {
     public static void main(String[] args) {
 
         //subarrays
-         int numbers[]= {2,4,6,8,10};
+         int numbers[]= {2,4,6,8};
          SubArrays(numbers);
     }
     
