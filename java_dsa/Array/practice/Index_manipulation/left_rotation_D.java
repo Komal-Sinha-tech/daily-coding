@@ -1,7 +1,8 @@
 package practice.Index_manipulation;
-import java.util.*;
+import java.util.Arrays;
 
-public class left_rotate_by_Dplace {
+
+public class left_rotation_D {
     public static void reverse_Array(int arr[],int start,int end){
         while(start<end){
            int temp=arr[start];
