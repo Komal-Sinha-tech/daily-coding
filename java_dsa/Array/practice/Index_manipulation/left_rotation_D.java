@@ -14,7 +14,7 @@ public class left_rotation_D {
     }  
     public static void left_rotate(int arr[],int d){
         int n= arr.length;
-         d = d % n;
+         d = d % n; //d>numbers.length
         reverse_Array(arr,0,d-1);
         reverse_Array(arr,d,n-1);
         reverse_Array(arr,0, n-1);
