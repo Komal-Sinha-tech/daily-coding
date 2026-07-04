@@ -1,5 +1,6 @@
 package twoD_Array;
 import java.util.*;
+
 public class twoD_Array{
     public static boolean search(int matrices[][],int key){
        for(int i=0;i<matrices.length;i++){
@@ -11,6 +12,17 @@ public class twoD_Array{
           }
          }
          return false;
+    }
+    public static void largest(int matrices[][]){
+      int largest = Integer.MIN_VALUE;
+      for(int i=0;i<matrices.length;i++){
+          for(int j=0;j<matrices[0].length;j++){
+            if(matrices[i][j] > largest){
+             largest = matrices[i][j];
+            }
+          }
+        }
+        System.out.println("largest no in matrix is: "+largest);
     }
 
     public static void main(String[] args) {
@@ -36,5 +48,6 @@ public class twoD_Array{
          }
          
         search(matrices, key);
+        largest(matrices);
     }
 }
