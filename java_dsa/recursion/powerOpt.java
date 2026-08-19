@@ -5,7 +5,8 @@ public class powerOpt {
         if(n==0){
             return 1;
         }
-        int halfPowerSqr = optimized_Power(a, n/2)*optimized_Power(a, n/2);
+        int halfPower=optimized_Power(a, n/2);
+        int halfPowerSqr = halfPower*halfPower;
         if(n % 2 !=0){
             halfPowerSqr=a*halfPowerSqr;
         }
